@@ -1,10 +1,11 @@
-import pool from '../configs/connectDB';
+import { firstRequest } from './test/firstRequest'
 
 let getHomePage = async (req, res) => {
-  const [rows, fields] = await pool.query('SELECT * FROM chat')
-  return res.send(rows)
+  const msg = "server ok"
+  return res.send({msg: msg})
 }
 
 module.exports = {
-  getHomePage
+  getHomePage,
+  firstRequest
 }
