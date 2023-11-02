@@ -1,9 +1,6 @@
-import client from "../../configs/connectDB"
+import { chats } from "../../database/collections"
 
 let firstRequest = async (req, res) => {
-  const database = client.db('stellaron')
-  const chats = database.collection('chat')
-
   const query = { title: 'chat 1' }
   const chat = await chats.findOne(query)
 
