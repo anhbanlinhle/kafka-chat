@@ -1,12 +1,8 @@
-import mysql from 'mysql2/promise';
+import { MongoClient } from 'mongodb'; 
 
 console.log('Creating connection pool...')
 
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  database: 'kafka-chat',
-  dateStrings: true
-})
+const uri = "mongodb://localhost:27017/";
+const client = new MongoClient(uri);
 
-export default pool;
+export default client;
