@@ -1,5 +1,5 @@
 {
-  "name": "kafka-chat",
+  "name": "stellaron-chat",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anhbanlinhle/kafka-chat.git"
+    "url": "git+https://github.com/anhbanlinhle/stellaron-chat.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anhbanlinhle/kafka-chat/issues"
+    "url": "https://github.com/anhbanlinhle/stellaron-chat/issues"
   },
-  "homepage": "https://github.com/anhbanlinhle/kafka-chat#readme",
+  "homepage": "https://github.com/anhbanlinhle/stellaron-chat#readme",
   "dependencies": {
     "@babel/core": "^7.21.3",
     "@babel/node": "^7.20.7",
@@ -24,6 +24,7 @@
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongodb": "6.2",
     "mysql2": "^3.2.0",
     "nodemon": "^3.0.1"
   }
