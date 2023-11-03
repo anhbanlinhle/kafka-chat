@@ -6,7 +6,7 @@ class KafkaConfig {
   constructor() {
     this.kafka = new Kafka({
       clientId: "stellaron",
-      brokers: [process.env.KAFKA_HOST || "localhost:29092"],
+      brokers: [process.env.KAFKA_HOST || "kafka:29092"],
     });
     this.producer = this.kafka.producer()
     this.consumer = this.kafka.consumer({ groupId: "blade" })
