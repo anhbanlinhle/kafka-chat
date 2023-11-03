@@ -8,6 +8,8 @@ const initWebRoute = (app) => {
 
   router.get('/test', homeController.firstRequest)
 
+  router.post('/produce', homeController.postMsgToKafka)
+
   return app.use('/', router)
 }
 

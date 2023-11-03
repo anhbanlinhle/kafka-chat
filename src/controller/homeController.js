@@ -1,4 +1,5 @@
 import { firstRequest } from './test/firstRequest'
+import { postMsgToKafka } from './producer/producer'
 
 let getHomePage = async (req, res) => {
   const msg = "server ok"
@@ -7,5 +8,6 @@ let getHomePage = async (req, res) => {
 
 module.exports = {
   getHomePage,
-  firstRequest
+  firstRequest,
+  postMsgToKafka
 }
