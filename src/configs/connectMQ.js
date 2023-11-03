@@ -9,6 +9,22 @@ class KafkaConfig {
     this.producer = this.kafka.producer()
     this.consumer = this.kafka.consumer({ groupId: "blade" })
   }
+
+  async produce(topic, messages) {
+    try {
+      await this.producer.connect()
+      await this.producer.send({
+        topic: topic,
+        messages: messages,
+      })
+    } 
+    catch (err) {
+      console.error(err)
+    } 
+    finally {
+      await this.producer.disconnect()
+    }
+  }
 }
 
 export default KafkaConfig;
