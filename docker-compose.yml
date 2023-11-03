@@ -41,7 +41,16 @@ services:
     ports:
       - "22181:2181"
 
-
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    networks:
+      - default
+    depends_on:
+      - kafka
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: kafka:29092
 
   mongo:
     image: mongo
