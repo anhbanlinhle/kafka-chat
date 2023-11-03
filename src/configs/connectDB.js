@@ -1,8 +1,8 @@
-import { MongoClient } from 'mongodb'; 
+import { MongoClient } from 'mongodb';
 
 console.log('Creating connection pool...')
 
-const uri = "mongodb://localhost:27017/";
+const uri = process.env.MONGO_URI || 'mongodb://mongo:27017/';
 const client = new MongoClient(uri);
 
 export default client;
