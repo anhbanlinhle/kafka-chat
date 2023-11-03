@@ -25,6 +25,26 @@ class KafkaConfig {
       await this.producer.disconnect()
     }
   }
+
+  async consume(topic, callback) {
+    try {
+      await this.consumer.connect()
+      await this.consumer.subscribe({ 
+        topic: topic, 
+        fromBeginning: true 
+      })
+      
+      await this.consumer.run({
+        eachMessage: async ({ topic, partition, message }) => {
+          const value = message.value.toString()
+          callback(value)
+        },
+      })
+    } 
+    catch (err) {
+      console.error(err);
+    }
+  }
 }
 
 export default KafkaConfig;
