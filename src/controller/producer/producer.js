@@ -2,7 +2,8 @@ import KafkaConfig from "../../configs/connectMQ"
 
 let postMsgToKafka = async (req, res) => {
   try {
-    const { message } = req.body;
+    console.log(req.body);
+    const message  = req.body.message
     
     const kafkaConfig = new KafkaConfig();
     const messages = [{ key: "key1", value: message }];
@@ -13,10 +14,8 @@ let postMsgToKafka = async (req, res) => {
     })
   } 
   catch (err) {
-    return res.status(500).send({
-      ErrorCode: err.code, 
-      ErrorNo: err.errno
-    })
+    console.log(err);
+    return res.status(500).send(err)
   }
 }
 
