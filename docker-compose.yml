@@ -4,6 +4,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    container_name: nodejs-app
     environment:
         - CHOKIDAR_USEPOLLING=true
     ports:
@@ -13,18 +14,14 @@ services:
       - mongo
     volumes:
       - ./src:/app/src
-  zookeeper:
-    image: confluentinc/cp-zookeeper:latest
-    environment:
-      ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
-    ports:
-      - "22181:2181"
+      - .env:/app/.env
 
   kafka:
     image: confluentinc/cp-kafka:latest
     depends_on:
       - zookeeper
+    restart: always
+    container_name: kafka
     ports:
       - "29092:29092"
     environment:
@@ -35,8 +32,20 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "22181:2181"
+
+
+
   mongo:
-    image: mongo:latest
+    image: mongo
+    restart: always
     container_name: mongo
     networks:
       - default
@@ -44,9 +53,6 @@ services:
       - "27018:27017"
     volumes:
       - ./data:/data/db
-
-#    volumes:
-#      - data:/data/db
 
 networks:
   my-network:

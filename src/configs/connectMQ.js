@@ -1,10 +1,12 @@
 import { Kafka } from "kafkajs"
 
+require('dotenv').config()
+
 class KafkaConfig {
   constructor() {
     this.kafka = new Kafka({
       clientId: "stellaron",
-      brokers: ["localhost:9091"],
+      brokers: [process.env.KAFKA_HOST || "localhost:29092"],
     });
     this.producer = this.kafka.producer()
     this.consumer = this.kafka.consumer({ groupId: "blade" })
