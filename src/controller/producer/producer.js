@@ -2,8 +2,7 @@ import KafkaConfig from "../../configs/connectMQ"
 
 let postMsgToKafka = async (req, res) => {
   try {
-    console.log(req.body);
-    const message  = req.body.message
+    const { message }  = req.body
     
     const kafkaConfig = new KafkaConfig();
     const messages = [{ key: "key1", value: message }];
