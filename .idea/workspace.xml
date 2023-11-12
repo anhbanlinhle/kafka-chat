@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a39784e7-3b70-4305-b701-f032e2c02421" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/WiredTigerHS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-0-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-2-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-2-8202385910910263728.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-4-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-17-04Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-18-10Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-21-58Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-26-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-29-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.2023-11-03T18-32-08Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-1-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-3-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-3-8202385910910263728.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-5-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-6-5360210678216574474.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000006" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/storage.bson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/connectDB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/connectMQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/homeController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/producer/producer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/test/firstRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/collections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2Y57Wre4sLt9PB0FUW8EqyyLeAn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39784e7-3b70-4305-b701-f032e2c02421" name="Changes" comment="" />
+      <created>1699803626026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699803626026</updated>
+      <workItem from="1699803628555" duration="662000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
